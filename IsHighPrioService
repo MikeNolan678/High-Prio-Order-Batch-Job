@@ -1,0 +1,28 @@
+class isHighPrioService extends SysOperationServiceBase
+{
+   public void process (isHighPrioContract _contract)
+   {
+       CustTable custTable;
+       SalesTable salesTable;
+ 
+       try
+       {
+           ttsbegin;
+           update_recordset salesTable
+               setting IsHighPrio = IsHighPrio::Yes
+               where salesTable.IsHighPrio == IsHighPrio::No
+               join custTable 
+               where custTable.IsHighPrio == IsHighPrio::Yes && custTable.AccountNum == salesTable.CustAccount;
+           ttscommit;
+ 
+           info(strFmt("Update successful. Records updated: %1", salesTable.rowCount()));
+       }
+       
+       catch (Exception::Error)
+       {
+           ttsabort;
+           error("An error occurred.");
+       }
+   }
+ 
+}
