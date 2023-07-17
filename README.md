@@ -14,6 +14,8 @@ If both conditions are met, the priority of the sales record will be updated to 
 
 The controller class `isHighPrioController` is responsible for creating an instance of the `isHighPrioService` and running the `process` method.
 
+<img width="215" alt="Screenshot 2023-07-17 at 16 48 45" src="https://github.com/MikeNolan678/HighPrioOrderBatch/assets/50291390/0db7b8d9-b9dc-462d-8c5c-2ed0d106559e">
+
 
 ## Assumptions
 
@@ -37,3 +39,4 @@ Currently, the `isHighPrioContract` class is an empty class decorated with `Data
 ## Note
 
 Please refer to the Dynamics AX documentation for more information about SysOperation framework, which is used here to implement batch service operations.
+  
