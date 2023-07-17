@@ -1,4 +1,4 @@
-# isHighPrioService - D365 Batch Job Sample
+# D365 Batch Job Sample (SysOperationFramework)
 
 This repository contains the code for an X++ service in Dynamics 365 F&O, named `isHighPrioService`. The service's main function is to scan the sales and customer tables (`SalesTable` and `CustTable` respectively) and update the priority status of each Sales Order.
 
