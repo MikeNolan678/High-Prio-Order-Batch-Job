@@ -1,0 +1,29 @@
+class isHighPrioController extends SysOperationServiceController
+{
+   protected void new()
+   {
+       super(classStr(isHighPrioService), methodStr(isHighPrioService, process), SysOperationExecutionMode::Synchronous);
+   }
+ 
+   public ClassDescription defaultCaption()
+   {
+       return "Update Sales Order Priority";
+   }
+ 
+   public static isHighPrioController construct(SysOperationExecutionMode _executionMode = SysOperationExecutionMode::Synchronous)
+   {
+       isHighPrioController controller;
+       controller = new isHighPrioController();
+       controller.parmExecutionMode(_executionMode);
+       return controller;
+   }
+ 
+   public static void main(Args _args)
+   {
+       isHighPrioController controller;
+       controller = isHighPrioController::construct();
+       controller.parmArgs(_args);
+       controller.startOperation();
+   }
+ 
+}
