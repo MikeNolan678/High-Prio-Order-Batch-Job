@@ -36,7 +36,3 @@ If an error occurs during the operation, the transaction will be aborted (`ttsab
 
 Currently, the `isHighPrioContract` class is an empty class decorated with `DataContractAttribute`. It serves as a placeholder for any future implementation where you may need to pass specific parameters to the `process` method. If any future parameters are required for the `process` method, they would be added as properties to this class.
 
-## Note
-
-Please refer to the Dynamics AX documentation for more information about SysOperation framework, which is used here to implement batch service operations.
-  
