@@ -2,7 +2,7 @@ class isHighPrioController extends SysOperationServiceController
 {
    protected void new()
    {
-       super(classStr(isHighPrioService), methodStr(isHighPrioService, process), SysOperationExecutionMode::Synchronous);
+       super(classStr(isHighPrioService), methodStr(isHighPrioService, processHighPrioCustomer), SysOperationExecutionMode::Synchronous);
    }
  
    public ClassDescription defaultCaption()
