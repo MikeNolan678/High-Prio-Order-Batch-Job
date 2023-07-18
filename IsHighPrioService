@@ -1,6 +1,6 @@
 class isHighPrioService extends SysOperationServiceBase
 {
-   public void process (isHighPrioContract _contract)
+   public void processHighPrioCustomer (isHighPrioContract _contract)
    {
        CustTable custTable;
        SalesTable salesTable;
